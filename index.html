@@ -8,6 +8,7 @@
 		<meta name="author" content="AO">
 		<meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Cormorant Infant' rel='stylesheet'>
         
         <style type="text/css">
         
@@ -15,8 +16,8 @@
 			
 			body
 			{
-				font-size:16px;
-				font-family: Arial, Helvetica, sans-serif;
+				font-size:20px;
+				font-family: "Trebuchet MS", Helvetica, sans-serif; /*-----------------------------------*/
 		        height:297mm;
 		  		width:210mm;
 		        /* to centre page on screen*/
@@ -25,6 +26,7 @@
 		        border: lightgray 1px solid;
 		        position: relative;
 		        font-weight:bold;
+		        
    			}
 
 			#container /*glowny blok majacy za zadanie trzymanie strony w ryzach*/
@@ -63,17 +65,26 @@
 				position: absolute;
 				left:320px;
 				top:20px;
-				margin-right: 40px;
+				margin-right: 20px;
 			}	
+			#main_section p
+			{
+				font-size: 14px;
+			}
+			#main_section p, #about_me, nav>p
+			{
+				font-family: "Cormorant Infant", Helvetica, sans-serif; /*-----------------------------------*/
+				font-style:oblique;
+			}
 			
 			#upper_background
 			{
-				position: absolute; top: 0%; height: 50%; width: 140px; left: 0%; background: #e3f4ff; z-index: -1;
+				position: absolute; top: 0%; height: 50%; width: 150px; left: 0%; background: #e3f4ff; z-index: -1;
 			}
 			
 			#bottom_background
 			{
-				position: absolute; top: 50%; height: 50%; width: 140px; left: 0%; background: #e6e6e6; z-index: -1;
+				position: absolute; top: 50%; height: 50%; width: 150px; left: 0%; background: #e6e6e6; z-index: -1;
 			}
 			
 			#side_section #photo
@@ -81,53 +92,67 @@
 				width:120px;
 				height:120px;
 				display: block;
-				margin:20px auto 60px auto;
+				margin:30px auto 60px auto;
 			}
 			
 			h1
 			{
-				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-				letter-spacing: 1em;
+				letter-spacing: 0.7em;
+				font-family: sans-serif;
+				font-weight: 700;
 			}
 			
 			h2
 			{
-				font-size:16px;
-				letter-spacing:1em;
+				font-size:20px;
+				letter-spacing:0.7em;
+				margin-bottom: 60px;
+				font-weight: 900;
 			}
 			h3
 			{
 				letter-spacing:0.5em;
-				margin-top:25px;
-				margin-bottom:25px;
-				font-weight:700;
+				margin:10px 0px;
+				font-weight: 900;
+				font-size:16px;	
 			}
 			
-			.h3_border
+			#main_section .h3_border
 			{
 				text-align: center;
 				width: 190px;
 				border:2px solid lightgray;
-				padding:15px 40px;
-				margin-top:40px;
-								
+				padding:8px 20px;
+				margin: 30px 0px;
+				
+				
+						
 			}
 			p
 			{
 				font-style:italic;
 			}
-			
-			span.job_position
-			{
-				
-			}
+
 			#expertise p
 			{
 				font-style: normal;
-				line-height: 2.5em;
-				
+				line-height: 1.5em;
+				font-family: Georgia; 
+				transform: scaleX(0.9);
+  				transform-origin: 0 0;
+				 
 			}
 			
+			.only_for_styling, span.job_position
+			{
+				font-style: normal;
+				line-height: 2.5em;
+				font-family: Georgia; 
+				transform: scaleX(0.7);
+  				transform-origin: 0 0;
+				 
+			}
+			span.job_position
 			nav p
 			{
 				font-size:11px;
@@ -138,19 +163,26 @@
 			{
 				color:gray;
 				line-height: 1.5em;
+				transform: scaleY(1.1);
+  				transform-origin: 0 0;
 				
 			}
 			div#expertise
 			{
 				position:absolute;
 				bottom:10px;
+				
 			}
 			
 			.mini_picture
 			{
-				width:18px;
-				height:18px;
+				width:30px;
+				height:30px;
 				vertical-align: bottom;
+			}
+			.only_for_styling
+			{
+				margin-bottom:-20px;
 			}
 			/*]]>*/
 		</style>
@@ -170,27 +202,27 @@
 			     			
 			     			
 			     			<h3>CONTACT</h3>
+			     			<br>
+			     			<p><img class="mini_picture" src="images/CV_1_phone.jpg" alt="phone">&nbsp; &nbsp; &nbsp; 12 765 436 568</p>
 			     			
-			     			<p><img class="mini_picture" src="images/CV_1_phone.jpg" alt="phone">&nbsp;&nbsp;&nbsp;12 765 436 568</p>
+			     			<p><img class="mini_picture" src="images/CV_1_email.jpg" alt="email">&nbsp; &nbsp; &nbsp; email@email.com</p>
 			     			
-			     			<p><img class="mini_picture" src="images/CV_1_email.jpg" alt="email">&nbsp;&nbsp;&nbsp;email@email.com</p>
+			     			<p><img class="mini_picture" src="images/CV_1_linkedin.jpg" alt="linkedin">&nbsp; &nbsp; &nbsp; linkedin.com</p>
 			     			
-			     			<p><img class="mini_picture" src="images/CV_1_linkedin.jpg" alt="linkedin">&nbsp;&nbsp;&nbsp;linkedin.com</p>
-			     			
-			     			<p><img class="mini_picture" src="images/CV_1_adress.jpg" alt="adress">&nbsp;&nbsp;&nbsp;London, 123 Street Address</p>
+			     			<p><img class="mini_picture" src="images/CV_1_adress.jpg" alt="adress">&nbsp; &nbsp; &nbsp; London, 123 Street Address</p>
 			     			
 			     		</nav>
 			     		<div>
 			     		<br>
 			     		<h3>ABOUT ME</h3>
-			     		
+			     		<br>
 			     		<p id="about_me">I am an experienced joiner with well developed skills and experience in groundwork and have worked in the construction industry since 1982. Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam vitae ex dietum ligula convallis laorect congue vel magma.  Nulla et sapien sollicitudin, ultricles erat ut, sollicitudin nisl. Donec facillisis urna et magna dapibus.</p>
 			     		
 			     		</div>		
 			     		
 			     		<div id="expertise">
 			     			<h3>EXPERTISE</h3>
-			     			
+			     			<br>
 			     			<p>WEB DESIGN</p>
 			     			
 			     			<p>PHOTOGRAPHY</p>
@@ -219,32 +251,31 @@
 			     
 			     		<h3 class="h3_border">EDUCATION</h3>
 			     		
-			     		ENTER YOUR DEGREE HERE
+			     		<div class="only_for_styling">ENTER YOUR DEGREE HERE</div> 
+			     		<p>Oxford University<br>
+			     		2007-2008</p>
+			     	
+			     		<div class="only_for_styling">ENTER YOUR DEGREE HERE</div> 
 			     		<p>Oxford University<br>
 			     		2007-2008</p>
 			     		
-			     		ENTER YOUR DEGREE HERE
-			     		<p>Oxford University<br>
-			     		2007-2008</p>
-			     		
-			     
 			     		<h3 class="h3_border">EXPERIENCE</h3>
 			     		
 			     		<span class="job_position">JOB POSITION HERE</span>
 			     		
-			     		<p>Company / London / 2017 - present</p>
+			     		<p>Company &nbsp; / &nbsp; London &nbsp; /&nbsp; 2017 - present</p>
 			     		
 			     		<p>Sed in sem pellentesque, luctus massa a, sagittis cros. Pellentesque bibendum, vestibulum defend, leo risus blandit cros, cu sagittis turpis purus sed magna phasellus elte aptent taciti sociosqu ad litora in sem pellentesque, luctus massa</p>
 						
 						<span class="job_position">JOB POSITION HERE</span>
 			     		
-			     		<p>Company / London / 2017 - present</p>
+			     		<p>Company &nbsp; / &nbsp; London &nbsp; /&nbsp; 2017 - present</p>
 			     		
 			     		<p>Sed in sem pellentesque, luctus massa a, sagittis cros. Pellentesque bibendum, vestibulum defend, leo risus blandit cros, cu sagittis turpis purus sed magna phasellus elte aptent taciti sociosqu ad litora in sem pellentesque, luctus massa</p>
-			
+						
 						<span class="job_position">JOB POSITION HERE</span>
 			     		
-			     		<p>Company / London / 2017 - present</p>
+			     		<p>Company &nbsp; / &nbsp; London &nbsp; /&nbsp; 2017 - present</p>
 			     		
 			     		<p>Sed in sem pellentesque, luctus massa a, sagittis cros. Pellentesque bibendum, vestibulum defend, leo risus blandit cros, cu sagittis turpis purus sed magna phasellus elte aptent taciti sociosqu ad litora in sem pellentesque, luctus massa</p>
 			
