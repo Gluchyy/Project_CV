@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CV</title>
+        <meta name="description" content="">
+		<meta name="author" content="AO">
+		<meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style type="text/css">
+        
+			/*<![CDATA[*/
+			
+			body
+			{
+				font-size:16px;
+				font-family: Arial, Helvetica, sans-serif;
+		        height:297mm;
+		  		width:210mm;
+		        /* to centre page on screen*/
+		        margin-left: auto;
+		        margin-right: auto;
+		        border: lightgray 1px solid;
+		        position: relative;
+		        font-weight:bold;
+   			}
+
+			#container /*glowny blok majacy za zadanie trzymanie strony w ryzach*/
+			{
+				margin: 0 auto; /*gora i dol margines 0, a boki automatycznie maja centrowac -- to nie wystarczy na ultra stare browsery, potrzebny align="center"dodac w divie */ 
+			}
+			
+			div#row
+			{
+				display: inline-block;
+			}
+			
+			
+			
+			#side_section
+			{	
+				
+				background-color: white;
+				padding: 20px 30px;
+				border: 2px solid lightgray;
+				width:190px;
+				height:275mm;
+				float:left;	
+				position:relative;
+				font-size:12px;
+				display: block;
+				margin-left:20px;
+				margin-top:20px;
+				
+				
+			}
+			#main_section
+			{
+				
+				/*border: 1px solid red;*/
+				position: absolute;
+				left:320px;
+				top:20px;
+				margin-right: 40px;
+			}	
+			
+			#upper_background
+			{
+				position: absolute; top: 0%; height: 50%; width: 140px; left: 0%; background: #e3f4ff; z-index: -1;
+			}
+			
+			#bottom_background
+			{
+				position: absolute; top: 50%; height: 50%; width: 140px; left: 0%; background: #e6e6e6; z-index: -1;
+			}
+			
+			#side_section #photo
+			{
+				width:120px;
+				height:120px;
+				display: block;
+				margin:20px auto 60px auto;
+			}
+			
+			h1
+			{
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				letter-spacing: 1em;
+			}
+			
+			h2
+			{
+				font-size:16px;
+				letter-spacing:1em;
+			}
+			h3
+			{
+				letter-spacing:0.5em;
+				margin-top:25px;
+				margin-bottom:25px;
+				font-weight:700;
+			}
+			
+			.h3_border
+			{
+				text-align: center;
+				width: 190px;
+				border:2px solid lightgray;
+				padding:15px 40px;
+				margin-top:40px;
+								
+			}
+			p
+			{
+				font-style:italic;
+			}
+			
+			span.job_position
+			{
+				
+			}
+			#expertise p
+			{
+				font-style: normal;
+				line-height: 2.5em;
+				
+			}
+			
+			nav p
+			{
+				font-size:11px;
+				font-weight: bold;
+				line-height: 1.5em;
+			}
+			#about_me
+			{
+				color:gray;
+				line-height: 1.5em;
+				
+			}
+			div#expertise
+			{
+				position:absolute;
+				bottom:10px;
+			}
+			
+			.mini_picture
+			{
+				width:18px;
+				height:18px;
+				vertical-align: bottom;
+			}
+			/*]]>*/
+		</style>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    	<div id="upper_background"> </div>
+  		<div id="bottom_background"> </div>
+    	
+			<div id="container"> <!-- start container -->
+		     	
+		     	<div class="row"> <!-- start row -->
+		     		<div id="side_section"> <!-- start boczna -->
+			     		<img id="photo" src="images/CV_1_photo.jpg" alt="my photo">
+			     		<nav>
+			     			
+			     			
+			     			<h3>CONTACT</h3>
+			     			
+			     			<p><img class="mini_picture" src="images/CV_1_phone.jpg" alt="phone">&nbsp;&nbsp;&nbsp;12 765 436 568</p>
+			     			
+			     			<p><img class="mini_picture" src="images/CV_1_email.jpg" alt="email">&nbsp;&nbsp;&nbsp;email@email.com</p>
+			     			
+			     			<p><img class="mini_picture" src="images/CV_1_linkedin.jpg" alt="linkedin">&nbsp;&nbsp;&nbsp;linkedin.com</p>
+			     			
+			     			<p><img class="mini_picture" src="images/CV_1_adress.jpg" alt="adress">&nbsp;&nbsp;&nbsp;London, 123 Street Address</p>
+			     			
+			     		</nav>
+			     		<div>
+			     		<br>
+			     		<h3>ABOUT ME</h3>
+			     		
+			     		<p id="about_me">I am an experienced joiner with well developed skills and experience in groundwork and have worked in the construction industry since 1982. Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam vitae ex dietum ligula convallis laorect congue vel magma.  Nulla et sapien sollicitudin, ultricles erat ut, sollicitudin nisl. Donec facillisis urna et magna dapibus.</p>
+			     		
+			     		</div>		
+			     		
+			     		<div id="expertise">
+			     			<h3>EXPERTISE</h3>
+			     			
+			     			<p>WEB DESIGN</p>
+			     			
+			     			<p>PHOTOGRAPHY</p>
+			     			
+			     			<p>SOCIAL MEDIA</p>
+			     			
+			     			<p>QUALITY CONTROL</p>
+			     			
+			     			<p>PUBLIC RELATIONS</p>
+			     			
+			     			<p>PRODUCT MANAGEMENT</p>
+			     			
+			     			<p>WEB DESIGN</p>
+			     			
+			     			<p>PHOTOGRAPHY</p>
+			     			
+			     			
+			     		</div>
+			     		
+			     	</div> <!-- koniec boczna -->
+			     	<div id="main_section"> <!-- start main section -->
+			     	<header>
+			     		<h1>MELISA<br> JOHNSON</h1>
+			     		<h2>FASHION EDITOR</h2>
+			     	</header>
+			     
+			     		<h3 class="h3_border">EDUCATION</h3>
+			     		
+			     		ENTER YOUR DEGREE HERE
+			     		<p>Oxford University<br>
+			     		2007-2008</p>
+			     		
+			     		ENTER YOUR DEGREE HERE
+			     		<p>Oxford University<br>
+			     		2007-2008</p>
+			     		
+			     
+			     		<h3 class="h3_border">EXPERIENCE</h3>
+			     		
+			     		<span class="job_position">JOB POSITION HERE</span>
+			     		
+			     		<p>Company / London / 2017 - present</p>
+			     		
+			     		<p>Sed in sem pellentesque, luctus massa a, sagittis cros. Pellentesque bibendum, vestibulum defend, leo risus blandit cros, cu sagittis turpis purus sed magna phasellus elte aptent taciti sociosqu ad litora in sem pellentesque, luctus massa</p>
+						
+						<span class="job_position">JOB POSITION HERE</span>
+			     		
+			     		<p>Company / London / 2017 - present</p>
+			     		
+			     		<p>Sed in sem pellentesque, luctus massa a, sagittis cros. Pellentesque bibendum, vestibulum defend, leo risus blandit cros, cu sagittis turpis purus sed magna phasellus elte aptent taciti sociosqu ad litora in sem pellentesque, luctus massa</p>
+			
+						<span class="job_position">JOB POSITION HERE</span>
+			     		
+			     		<p>Company / London / 2017 - present</p>
+			     		
+			     		<p>Sed in sem pellentesque, luctus massa a, sagittis cros. Pellentesque bibendum, vestibulum defend, leo risus blandit cros, cu sagittis turpis purus sed magna phasellus elte aptent taciti sociosqu ad litora in sem pellentesque, luctus massa</p>
+			
+			     	</div> <!-- koniec main section -->
+			     	
+			     </div>	<!-- koniec row -->
+			</div>	<!-- koniec container -->
+     	
+    
+    </body>
+</html>
