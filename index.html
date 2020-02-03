@@ -17,30 +17,29 @@
 			body
 			{
 				font-size:20px;
-				font-family: "Trebuchet MS", Helvetica, sans-serif; /*-----------------------------------*/
-		        height:297mm;
-		  		width:210mm;
-		        /* to centre page on screen*/
-		        margin-left: auto;
-		        margin-right: auto;
-		        border: lightgray 1px solid;
-		        position: relative;
-		        font-weight:bold;
-		        
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				z-index:-1;
+		      	background-color: #e5e8e8; 
    			}
 
 			#container /*glowny blok majacy za zadanie trzymanie strony w ryzach*/
 			{
-				margin: 0 auto; /*gora i dol margines 0, a boki automatycznie maja centrowac -- to nie wystarczy na ultra stare browsery, potrzebny align="center"dodac w divie */ 
+				height:297mm;
+		  		width:210mm;
+		        /* to centre page on screen*/
+		        margin: 20mm auto;
+		        border: lightgray 1px solid;
+		        position: relative;
+		        font-weight:bold;
+		        background-color:white; z-index: -1;	 
+		        box-shadow: 0 0 100px gray;
 			}
 			
 			div#row
 			{
 				display: inline-block;
 			}
-			
-			
-			
+
 			#side_section
 			{	
 				
@@ -55,8 +54,6 @@
 				display: block;
 				margin-left:20px;
 				margin-top:20px;
-				
-				
 			}
 			#main_section
 			{
@@ -67,10 +64,12 @@
 				top:20px;
 				margin-right: 20px;
 			}	
+			
 			#main_section p
 			{
 				font-size: 14px;
 			}
+			
 			#main_section p, #about_me, nav>p
 			{
 				font-family: "Cormorant Infant", Helvetica, sans-serif; /*-----------------------------------*/
@@ -123,11 +122,9 @@
 				width: 190px;
 				border:2px solid lightgray;
 				padding:8px 20px;
-				margin: 30px 0px;
-				
-				
-						
+				margin: 30px 0px;		
 			}
+			
 			p
 			{
 				font-style:italic;
@@ -140,7 +137,6 @@
 				font-family: Georgia; 
 				transform: scaleX(0.9);
   				transform-origin: 0 0;
-				 
 			}
 			
 			.only_for_styling, span.job_position
@@ -152,7 +148,7 @@
   				transform-origin: 0 0;
 				 
 			}
-			span.job_position
+
 			nav p
 			{
 				font-size:11px;
@@ -190,11 +186,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    	<div id="upper_background"> </div>
-  		<div id="bottom_background"> </div>
+    	
     	
 			<div id="container"> <!-- start container -->
-		     	
+		     	<div id="upper_background"> </div>
+  				<div id="bottom_background"> </div>
 		     	<div class="row"> <!-- start row -->
 		     		<div id="side_section"> <!-- start boczna -->
 			     		<img id="photo" src="images/CV_1_photo.jpg" alt="my photo">
