@@ -3,7 +3,7 @@ body
 	font-size:20px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	z-index:-1;
-	background-color: #e5e8e8; 
+	background-color: #DADADA; 
 }
 
 #container /*glowny blok majacy za zadanie trzymanie strony w ryzach*/
@@ -42,9 +42,9 @@ div#row
 #main_section
 {
 	
-	/*border: 1px solid red;*/
+	display: inline-block;
 	position: absolute;
-	left:320px;
+	margin-left:20px;
 	top:20px;
 	margin-right: 20px;
 }	
@@ -62,12 +62,12 @@ div#row
 
 #upper_background
 {
-	position: absolute; top: 0%; height: 50%; width: 150px; left: 0%; background: #e3f4ff; z-index: -1;
+	position: absolute; top: 0%; height: 50%; width: 150px; left: 0%; background: #E0EDF5; z-index: -1;
 }
 
 #bottom_background
 {
-	position: absolute; top: 50%; height: 50%; width: 150px; left: 0%; background: #e6e6e6; z-index: -1;
+	position: absolute; top: 50%; height: 50%; width: 150px; left: 0%; background: #DCDBD7; z-index: -1;
 }
 
 #side_section #photo
