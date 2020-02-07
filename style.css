@@ -128,9 +128,10 @@ p
 	font-style: normal;
 	line-height: 2.5em;
 	font-family: Georgia; 
+	-ms-transform: scaleX(0.7);
+	-webkit-transform: scaleX(0.7);
 	transform: scaleX(0.7);
 	transform-origin: 0 0;
-	 
 }
 
 nav p
@@ -143,6 +144,8 @@ nav p
 {
 	color:gray;
 	line-height: 1.5em;
+	-ms-transform: scaleY(1.1);
+	-webkit-transform: scaleY(1.1);
 	transform: scaleY(1.1);
 	transform-origin: 0 0;
 	
