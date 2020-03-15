@@ -1,0 +1,205 @@
+:root
+{
+	font-size:20px;
+}
+body
+{
+	box-sizing: border-box;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+#background
+{
+	position: fixed; 
+	top: 0%; 
+	height: 100%; 
+	width: 150px; 
+	left: 0%; 
+	background: linear-gradient(to bottom, #E0EDF5 0%, #E0EDF5 50%, #DCDBD7 50%, #DCDBD7 100%);
+	z-index: -1;
+}	
+#container
+{
+	display:flex;
+	flex-direction: column;
+}
+header
+{
+	padding:50px;
+	background-color: white;
+	margin-left:20px;
+	margin-top:20px;
+}
+}
+header.hidden_on_small
+{
+	display:none;
+}
+aside
+{	
+	background-color: white;
+	padding: 20px 30px;
+	font-size:0.6rem;
+	margin-left:20px;
+}
+#main_section
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: white;
+	padding:0 20px;
+	margin-bottom:20px;
+}	
+
+#main_section p
+{
+	font-size: 0.7rem;
+}
+
+#main_section p, #about_me, nav>p
+{
+	font-family: "Cormorant Infant", Helvetica, sans-serif;
+	font-style:oblique;
+}
+
+#photo
+{
+	display: block;
+	margin:0 auto;
+	width: 80%;
+}
+
+h1
+{
+	letter-spacing: 0.7em;
+	font-family: sans-serif;
+}
+
+h2
+{
+	font-size:1rem;
+	letter-spacing:0.7em;
+	margin-bottom: 60px;
+}
+h3
+{
+	letter-spacing:0.5em;
+	margin:30px 0px 30px;
+	font-size:0.8rem;	
+}
+
+#main_section h3
+{
+	text-align: center;
+
+	border:2px solid lightgray;
+	padding:8px 20px;
+	margin: 40px 0px 30px 0px;		
+}
+
+p
+{
+	font-style:italic;
+}
+
+#expertise p
+{
+	font-style: normal;
+	line-height: 1.5em;
+	font-family: Georgia; 
+}
+
+.degree, .job_position
+{
+	font-style: normal;
+	line-height: 2.5em;
+	font-family: Georgia; 
+	-ms-transform: scaleX(0.7);
+	-webkit-transform: scaleX(0.7);
+	transform: scaleX(0.7);
+	transform-origin: 0 0;
+}
+
+nav p
+{
+	font-size: 0.55rem;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+#about_me
+{
+	color:gray;
+	line-height: 1.5em;
+}
+
+.mini_picture
+{
+	width: 20px;
+}
+
+
+header.hidden_on_small
+{
+	display:none;
+}
+
+
+
+
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) 
+{ 
+}
+
+/*// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }*/
+
+/*// Extra large devices (large desktops, 1200px and up)//*/
+@media (min-width: 1200px)
+{ 
+	#container
+{
+	flex-direction: row;
+	height:297mm;
+	width:210mm;
+	display: flex;
+	margin: 0 auto;
+	position:relative;
+	border: 1px solid lightgrey;
+}
+	#background
+{
+	position: absolute;
+	left:0;
+	top:0;
+	margin: 0 auto;
+	width: 150px; 
+	padding:0;
+}
+aside
+{
+	width:190px;
+	border: 2px solid lightgray;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#main_section h3
+{
+	width:190px;
+}
+header
+{
+	display: none;
+}
+header.hidden_on_small
+{
+	display:block;
+	padding:0px;
+}
